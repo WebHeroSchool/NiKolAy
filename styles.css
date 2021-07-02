@@ -113,13 +113,19 @@ body{
 .main{
 	padding: 0 63% 181px 0;
 	background:top right 5px no-repeat url(img/mainimg.svg);
-	background-size: 670px 657px;
+	background-size: 770px 657px;
 }
 
 .main__title{
 	margin: 0px 0 40px 0;
 	padding: 74px 0 0 0;
 	font: bold 66px/87px pt_serifbold,arial,helvetica, sans-serif;
+}
+
+.main__title-question{
+
+	display: inline-block;
+	background: white;
 }
 
 .main__subtitle{
@@ -428,6 +434,21 @@ body{
 	.main__subtitle {
 	    margin: 0px 20px 40px 15px;
 }
+
+	.main__points_1 {
+    	
+    	margin: 0px 0 0 395px;
+}
+
+	.main__points_2 {
+    	
+    	margin: 0px 0 0 407px;
+}
+
+	.main__points_3 {
+    	
+    	margin: 0px 0 0 419px;
+}
 }
 
 @media(max-width: 762px){
@@ -441,60 +462,7 @@ body{
 }
 }
 
-@media(max-width: 717px){
-
-	.main__subtitle{
-
-		font: 400 14px/16px Roboto,arial,helvetica, sans-serif;
-	}
-
-	.main__title{
-
-		font: bold 33px/44px pt_serifbold,arial,helvetica, sans-serif;
-	}
-
-	.main{
-		background-size: 291px 257px;
-	}
-}
-
-@media(max-width: 601px){
-
-	.main__button {
-    	
-    	padding: 17px 6px;
-    	font: 9px/0px Roboto, arial, helvetica, sans-serif;
-    }
-
-    .main__title{
-
-    	font: bold 27px/35px pt_serifbold,arial,helvetica, sans-serif;
-    }
-
-    .main__subtitle{
-
-    	font: 400 12px/15px Roboto,arial,helvetica, sans-serif;
-    }
-
-    .main{
-
-    	background-size: 277px 221px;
-    }
-
-    .logo{
-
-    	font: bold 16px/32px pt_serifbold,arial,helvetica, sans-serif;
-    }
-
-    .menu__item{
-
-    	font: 500 11px/16px Roboto, arial, helvetica, sans-serif;
-    }
-
-}
-
-@media(max-width: 540px){
-
+@media(max-width: 733px){
 
 	#menu__toggle {
   		opacity: 0;
@@ -588,6 +556,20 @@ body{
 	  transition-duration: .25s;
 }
 
+	.main__subtitle{
+
+		font: 400 14px/16px Roboto,arial,helvetica, sans-serif;
+	}
+
+	.main__title{
+
+		font: bold 33px/44px pt_serifbold,arial,helvetica, sans-serif;
+	}
+
+	.main{
+		background-size: 291px 257px;
+	}
+
 	.logo{
 		font: bold 0px/0px pt_serifbold,arial,helvetica, sans-serif;
 		display: flex;
@@ -634,7 +616,44 @@ body{
 	.menu__item:hover:after, .menu__item_active:after {
     	opacity: 0;
 }
+}
 
+@media(max-width: 601px){
+
+	.main__button {
+    	
+    	padding: 17px 6px;
+    	font: 9px/0px Roboto, arial, helvetica, sans-serif;
+    }
+
+    .main__title{
+
+    	font: bold 27px/35px pt_serifbold,arial,helvetica, sans-serif;
+    }
+
+    .main__subtitle{
+
+    	font: 400 12px/15px Roboto,arial,helvetica, sans-serif;
+    }
+
+    .main{
+
+    	background-size: 277px 221px;
+    }
+
+    .menu__item{
+
+    	font: 500 30px/35px Roboto, arial, helvetica, sans-serif;
+    }
+
+}
+
+@media(max-width: 540px){
+
+	.main__button{
+
+		margin-left: 47%;
+	}
 }
 
 @media(max-width: 410px){
@@ -689,13 +708,13 @@ body{
 	.main__subtitle {
 	    font: 400 16px/18px Roboto,arial,helvetica, sans-serif;
 	    padding: 0;
-    	margin: 0px 14px 26px 70px;
+    	margin: 0px 14px 27px 70px;
 }
 
 	.main__button {
-	    padding: 14px 21px;
-    	margin-left: 84px;
-    	font: 14px/16px Roboto, arial, helvetica, sans-serif;
+	    padding: 12px 25px 14px 18px;
+    	margin-left: 83px;
+    	font: 14px/16.41px Roboto, arial, helvetica, sans-serif;
 }
 
 	.menu{
@@ -704,11 +723,16 @@ body{
 
 	.menu__item{
 		padding: 22px 24px;
+		font: 500 30px/16px Roboto, arial, helvetica, sans-serif;
 	}
 
 	.menu__item:last-child{
-		padding: 22px 20px 0 0;
+		padding: 21px 21px 0 0;
 	}
+
+	#menu__toggle:checked ~ .menu {
+	    left: -1px;
+}
 
 }
 
