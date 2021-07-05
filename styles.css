@@ -137,7 +137,7 @@ body {
 .main__title {
 	margin: 0px 0 37px 0;
 	padding: 74px 0 0 3px;
-	font: bold 66px/87px pt_serifbold,arial,helvetica, sans-serif;
+	font: bold 66px/87px pt_serifbold, arial, helvetica, sans-serif;
 }
 
 .main__title-question {
@@ -183,17 +183,17 @@ body {
 
 .main__points_1 {
 	margin: 85px 0 0 0;
-	left: calc(50% - 8px/2 - 12px);
+	left: calc(50% - 8px / 2 - 12px);
 }
 
 .main__points_2 {
 	margin: 85px 0 0 0;
-	left: calc(50% - 8px/2);
+	left: calc(50% - 8px / 2);
 }
 
 .main__points_3 {
 	margin: 85px 0 0 0;
-	left: calc(50% - 8px/2 + 12px);
+	left: calc(50% - 8px / 2 + 12px);
 }
 
 #menu__toggle {
@@ -569,10 +569,6 @@ body {
 }
 
 
-	.main {
-		background-size: 291px 257px;
-	}
-
 	.logo {
 		font: bold 0px/0px pt_serifbold,arial,helvetica, sans-serif;
 		display: flex;
@@ -582,7 +578,8 @@ body {
 
 	.main {
 	    padding: 32px 18% 146px 0;
-	    background: center top 60px no-repeat url(img/mainimgmobile.svg)
+	    background: center top 26px no-repeat url(img/mainimgmobile.svg);
+		background-size: 316px;
 }
 
 	.main__title {
@@ -595,6 +592,7 @@ body {
 	    padding: 0 0 0 31px;
 	    margin: 0 33px 40px 107px;
 	    text-align: center;
+	    font: 400 18px/24px Roboto,arial,helvetica, sans-serif;;
 }
 
 	.main__points {
