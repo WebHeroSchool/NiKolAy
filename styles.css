@@ -13,7 +13,7 @@ body {
 	margin-bottom: 130px;
 }
 
-.logo, .menu { 
+.logo, .menu {
 	display: inline-block;
 }
 
@@ -141,7 +141,6 @@ body {
 }
 
 .main__title-question {
-
 	display: inline;
 	background: white;
 }
@@ -835,7 +834,7 @@ body {
 		padding: 21px 21px 0 0;
 	}
 
-	#menu__toggle:checked ~ .menu  {
+	#menu__toggle:checked ~ .menu {
 	    left: -1px;
 }
 
