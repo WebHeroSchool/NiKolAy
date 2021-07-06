@@ -218,7 +218,7 @@ body {
 
 @media(max-width: 1558px) {
 	.main__title {
-		font: bold 55px/78px pt_serifbold,arial,helvetica, sans-serif;
+		font: bold 55px/78px pt_serifbold, arial, helvetica, sans-serif;
 	}
 
 }
@@ -561,12 +561,12 @@ body {
 	.main {
 	  padding: 32px 18% 146px 0;
 		background: center top 26px no-repeat url(img/mainimgmobile.svg);
-		background-size: 316px;
+		background-size: 351px;
 }
 
 	.main__title {
     padding: 316px 0 0 106px;
-    font: bold 35px/56px pt_serifbold, arial, helvetica, sans-serif;
+    font: bold 42px/56px pt_serifbold, arial, helvetica, sans-serif;
     text-align: center;
 }
 
@@ -574,7 +574,7 @@ body {
 	  padding: 0 0 0 31px;
 	  margin: 0 33px 40px 107px;
 	  text-align: center;
-		font: 400 18px/24px Roboto, arial, helvetica, sans-serif;
+		font: 400 22px/24px Roboto, arial, helvetica, sans-serif;
 }
 
 	.main__points {
@@ -582,8 +582,9 @@ body {
 	}
 
 	.main__button {
-	  padding: 28px 25px;
-		margin-left: 43%;
+	  padding: 28px 78px;
+    margin-left: 30%;
+    font: 17px/0px Roboto, arial, helvetica, sans-serif;
 }
 
 	.menu__item {
@@ -610,15 +611,11 @@ body {
 
 
   .main__title {
-    font: bold 27px/35px pt_serifbold, arial, helvetica, sans-serif;
+    font: bold 35px/48px pt_serifbold, arial, helvetica, sans-serif;
   }
 
   .main__subtitle {
-    font: 400 16px/19px Roboto, arial, helvetica, sans-serif;
-  }
-
-  .main {
-    background-size: 277px 221px;
+    font: 400 19px/21px Roboto, arial, helvetica, sans-serif;
   }
 
   .menu__item {
