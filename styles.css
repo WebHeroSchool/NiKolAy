@@ -131,13 +131,13 @@ body {
 }
 
 .main__title {
-margin: 0 0 37px 0;
+	margin: 0 0 37px 0;
 	padding: 74px 0 0 3px;
 	font: bold 66px/87px pt_serifbold, arial, helvetica, sans-serif;
 }
 
 .main__title-question {
-display: inline;
+	display: inline;
 	background: white;
 }
 
@@ -560,8 +560,8 @@ display: inline;
 
 	.main {
 	  padding: 32px 18% 146px 0;
-background: center top 26px no-repeat url(img/mainimgmobile.svg);
-background-size: 316px;
+		background: center top 26px no-repeat url(img/mainimgmobile.svg);
+		background-size: 316px;
 }
 
 	.main__title {
@@ -574,7 +574,7 @@ background-size: 316px;
 	  padding: 0 0 0 31px;
 	  margin: 0 33px 40px 107px;
 	  text-align: center;
-font: 400 18px/24px Roboto, arial, helvetica, sans-serif;
+		font: 400 18px/24px Roboto, arial, helvetica, sans-serif;
 }
 
 	.main__points {
@@ -583,8 +583,9 @@ font: 400 18px/24px Roboto, arial, helvetica, sans-serif;
 
 	.main__button {
 	  padding: 28px 25px;
-margin-left: 43%;    
+		margin-left: 43%;
 }
+
 	.menu__item {
 	  padding: 38px 24px;
 	  font-size: 30px;
