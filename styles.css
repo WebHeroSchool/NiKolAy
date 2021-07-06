@@ -107,7 +107,7 @@ body {
 }
 .main {
 	padding: 0 63% 181px 0;
-	background:top right 5px no-repeat url(img/mainimg.svg);
+	background: top right 5px no-repeat url(img/mainimg.svg);
 	background-size: 770px 657px;
 }
 .main__title {
@@ -461,7 +461,7 @@ body {
 	  padding: 0 0 0 31px;
 	  margin: 0 33px 40px 107px;
 	  text-align: center;
-	  font: 400 18px/24px Roboto, arial, helvetica, sans-serif;;
+		font: 400 18px/24px Roboto, arial, helvetica, sans-serif;
 }
 	.main__points {
 		display: none;
