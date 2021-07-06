@@ -1,24 +1,29 @@
 body {
   margin: 0;
 }
+
 .wrapper {
 	margin: auto;
 	width: 80%;
 }
+
 .header {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 130px;
 }
+
 .logo, .menu {
 	display: inline-block;
 }
+
 .logo {
   position: relative;
 	padding: 40px 0;
 	padding-left: 48px;
 	font: bold 24px/32px pt_serifbold,arial,helvetica, sans-serif;
 }
+
 .logo__circle {
 	position: absolute;
 	left: 4px;
@@ -31,33 +36,41 @@ body {
 	animation: circle 2s linear infinite;
 	animation-delay: 1s;
 }
+
 .logo__circle_color_dark-blue {
 	background: #0056EC;
 }
+
 .logo__circle_color_blue {
 	left: 12px;
 	top: 56%;
 	background: #C8DBFB;
 }
+
 @keyframes circle {
 	0% {
 		border-radius: 50%;
 	}
 
+
 	50% {
 		border-radius: 0;
 	}
 
+
 	100% {
 		border-radius: 50%;
 	}
+
 }
+
 .menu {
 	display: flex;
 	align-items: center;
 	left: 100px;
 	padding-top: 28px;
 }
+
 .menu__item {
 	position: relative;
 	margin-right: 26px;
@@ -66,9 +79,11 @@ body {
 	text-decoration: none;
 	transition: opacity .5s;
 }
+
 .menu__item:last-child {
 	margin-right: 9px;
 }
+
 .menu__item:after {
  	position: absolute;
  	left: 0;
@@ -80,13 +95,16 @@ body {
  	opacity: 0;
  	transition: opacity .5s, width .5s;
 }
+
 .menu__item:hover {
  	opacity: 0.5;
 }
+
 .menu__item:hover:after, .menu__item_active:after {
 	opacity: 1;
 	width: 100%;
 }
+
 .menu__item:hover:after {
  	position: absolute;
  	left: 0;
@@ -96,6 +114,7 @@ body {
  	height: 3px;
  	background: #0056EC;
 }
+
 .menu__item_active:hover:after {
 	position: absolute;
 	display: block;
@@ -105,24 +124,29 @@ body {
 	height: 3px;
 	background: #0056EC;
 }
+
 .main {
 	padding: 0 63% 181px 0;
 	background: top right 5px no-repeat url(img/mainimg.svg);
 	background-size: 770px 657px;
 }
+
 .main__title {
 	margin: 0 0 37px 0;
 	padding: 74px 0 0 3px;
 	font: bold 66px/87px pt_serifbold, arial, helvetica, sans-serif;
 }
+
 .main__title-question {
 	display: inline;
 	background: white;
 }
+
 .main__subtitle {
 	margin: 0 130px 42px 1px;
 	font: 400 22px/25px Roboto, arial, helvetica, sans-serif;
 }
+
 .main__button {
 	display: inline-block;
 	font: 18px/21px Roboto, arial, helvetica, sans-serif;
@@ -134,13 +158,16 @@ body {
 	transition: background .5s, opacity .5s;
 	margin-left: 4px;
 }
+
 .main__button:hover {
 	opacity: .5;
 	background: red;
 }
+
 .main__title-text_highlight {
 	background: linear-gradient(180deg,rgba(255,255,255,1) 15%, #ECF3FF 15%);
 }
+
 .main__points {
 	position: absolute;
 	width: 8px;
@@ -149,221 +176,291 @@ body {
 	opacity: .7;
 	background: #C8DBFB;
 }
+
 .main__points_1 {
 	margin: 85px 0 0 0;
 	left: calc(50% - 8px / 2 - 12px);
 }
+
 .main__points_2 {
 	margin: 85px 0 0 0;
 	left: calc(50% - 8px / 2);
 }
+
 .main__points_3 {
 	margin: 85px 0 0 0;
 	left: calc(50% - 8px / 2 + 12px);
 }
+
 #menu__toggle {
   visibility: hidden;
 }
+
 @media(max-width: 1850px) {
 	.main {
 		padding: 0 59% 181px 0;
 	}
+
 }
+
 @media(max-width: 1735px) {
 	.main {
 		background-size: 589px 564px;
 	}
+
 }
+
 @media(max-width: 1675px) {
 	.main__subtitle {
 		margin: 0 67px 38px 0;
 	}
+
 }
+
 @media(max-width: 1558px) {
 	.main__title {
 		font: bold 55px/78px pt_serifbold,arial,helvetica, sans-serif;
 	}
+
 }
+
 @media(max-width: 1495px) {
 	.main__subtitle {
 		margin: 0 8px 38px 0;
 	}
+
 }
+
 @media(max-width: 1366px) {
 	.logo {
     	padding: 38px 0;
     	padding-left: 126px;
 }
+
 	.logo__circle {
 		left: 83px;
     	top: 50%;
 	}
+
 	.logo__circle_color_blue {
 		left: 91px;
 		top: 58%;
 	}
+
 	.menu__item  {
     	font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
 }
+
 	.menu {
 		padding-top: 32px;
 	}
+
 	.menu__item {
 		left: -78px;
 	}
+
 	.main {
   	padding: 27px 55% 146px 0;
     background: top 11px right 80px  no-repeat url(img/mainimg.svg);
     background-size: 514px 439px;
 }
+
 	.main__title {
     padding: 0px 0 0 81px;
     font: bold 50px/66px pt_serifbold, arial, helvetica, sans-serif;
 }
+
 	.header {
 		margin-bottom: 76px;
 	}
+
 	.main__subtitle {
     margin: 0px 15px 41px 82px;
     font: 400 18px/22.9px Roboto, arial, helvetica, sans-serif;
 	}
+
 	.main__button {
     font: 14px/0px Roboto, arial, helvetica, sans-serif;
     padding: 23px 20px;
     margin-left: 83px;
 }
+
 	.main__points_1 {
 		margin: 0;
 }
+
 	.main__points_2 {
 		margin: 0;
 }
+
 	.main__points_3 {
 		margin: 0;
 }
+
 }
+
 @media(max-width: 1300px) {
 	.main__title {
 		font: bold 43px/55px pt_serifbold, arial, helvetica, sans-serif;
 	}
+
 	.main__subtitle {
 		margin: 0px 13px 41px 82px;
     font: 400 17px/19px Roboto, arial, helvetica, sans-serif;
 	}
+
 	.main {
 		background-size: 436px 376px;
 	}
+
 }
+
 @media(max-width: 1173px) {
 	.main__title {
 		padding: 0;
 	}
+
 	.main__subtitle {
 		margin: 0px 42px 41px 0;
 	}
+
 	.main__button {
 		margin-left: 0;
 	}
+
 	.main {
 		background-size: 391px 342px;
 	}
+
 	.logo__circle_color_blue {
 		left: 10px;
 	}
+
 	.logo__circle_color_dark-blue {
 		left: 0;
 	}
+
 	.logo {
 		padding-left: 45px;
 	}
+
 }
+
 @media(max-width: 1024px) {
 	.wrapper {
     margin: auto;
     width: 100%;
 }
+
 	.header {
 		margin-bottom: 71px;
 	}
+
 	.logo {
 	  padding: 39px 0px 37px 90px;
 	}
+
 	.logo__circle_color_dark-blue {
 		left: 46px;
 	}
+
 	.logo__circle_color_blue {
 		left: 54px;
 	}
+
 	.menu__item {
     left: -38px;
 }
+
 	.main__title {
     padding: 0 0 0 45px;
     font: bold 50px/66px pt_serifbold, arial, helvetica, sans-serif;
 }
+
 	.main__subtitle {
     margin: 0px 63px 40px 46px;
     font: 400 18px/23px Roboto, arial, helvetica, sans-serif;
-}	
+}
+
 	.main__button {
 		padding: 21px 20px;
     margin-left: 46px;
 	}
+
 	.main {
     padding: 32px 55% 146px 0;
     background: top 17px right 47px no-repeat url(img/mainimg.svg);
     background-size: 514px 439px;
 }
+
 }
+
 @media(max-width: 1012px) {
 	.main__subtitle {
 		margin: 0px 58px 40px 46px;
     font: 400 16px/18px Roboto, arial, helvetica, sans-serif;
 	}
+
 	.main {
 		background-size: 427px 368px;
 	}
+
 	.main__title {
 		font: bold 38px/56px pt_serifbold, arial, helvetica, sans-serif;
 	}
+
 }
+
 @media(max-width: 916px) {
 	.main__title  {
 		font: bold 33px/49px pt_serifbold, arial, helvetica, sans-serif;
 }
+
 	.main__subtitle {
 		font: 400 15px/16px Roboto, arial, helvetica, sans-serif;
 }
+
 	.main__button {
 		font: 13px/0px Roboto, arial, helvetica, sans-serif;
 	}
+
 }
+
 @media(max-width: 872px) {
 	.main__subtitle {
 		margin: 0px 30px 40px 46px;
 	}
+
 }
+
 @media(max-width: 857px) {
 	.main {
  	  background-size: 359px 315px;
 }
+
 	.main__subtitle {
 		margin: 0px 12px 40px 46px;
 }
+
 }
+
 @media(max-width: 762px) {
 	.main {
  	  background-size: 316px 315px;
 }
+
 	.main__subtitle {
 	  margin: 0px 0px 40px 46px;
 	  font: 400 13px/16px Roboto, arial, helvetica, sans-serif;
 }
+
 }
+
 @media(max-width: 733px) {
 	#menu__toggle {
   	opacity: 0;
 }
+
 	.menu__btn {
   	display: flex;
   	align-items: center;  
@@ -375,6 +472,7 @@ body {
   	cursor: pointer;
   	z-index: 1;
 }
+
 	.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
 		display: block;
 		position: absolute;
@@ -382,14 +480,17 @@ body {
 		height: 3px;
 		background-color: #0056EC;
 }
+
 	.menu__btn > span::before {
 	  content: '';
 	  top: -8px;
 }
+
 	.menu__btn > span::after {
 	  content: '';
 	  top: 8px;
 }
+
 	.menu {
 	  display: block;
 	  position: fixed;
@@ -405,6 +506,7 @@ body {
 	  background-color: white;
 	  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 }
+
 	.menu__item  {
 	  display: block;
 	  padding: 12px 24px;
@@ -414,73 +516,92 @@ body {
 	  font-weight: 600;
 	  text-decoration: none;
 }
+
 	.menu__item:hover {
 	  background-color: #CFD8DC;
 }
+
 	#menu__toggle:checked ~ .menu__btn > span {
 	  transform: rotate(45deg);
 }
+
 	#menu__toggle:checked ~ .menu__btn > span::before {
 	  top: 0;
 	  transform: rotate(0);
 }
+
 	#menu__toggle:checked ~ .menu__btn > span::after {
 	  top: 0;
 	  transform: rotate(90deg);
 }
+
 	#menu__toggle:checked ~ .menu {
 	  visibility: visible;
 	  left: 0;
 }
+
 	.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
 	  transition-duration: .25s;
 }
+
 	.menu {
 	  transition-duration: .25s;
 }
+
 	.menu__item {
 	  transition-duration: .25s;
 }
+
 	.logo {
 		font: bold 0px/0px pt_serifbold, arial, helvetica, sans-serif;
 		display: flex;
     position: fixed;
     top: 8px;
 }
+
 	.main {
 	  padding: 32px 18% 146px 0;
 	  background: center top 26px no-repeat url(img/mainimgmobile.svg);
 		background-size: 316px;
 }
+
 	.main__title {
     padding: 316px 0 0 106px;
     font: bold 35px/56px pt_serifbold, arial, helvetica, sans-serif;
     text-align: center;
 }
+
 	.main__subtitle {
 	  padding: 0 0 0 31px;
 	  margin: 0 33px 40px 107px;
 	  text-align: center;
 		font: 400 18px/24px Roboto, arial, helvetica, sans-serif;
 }
+
 	.main__points {
 		display: none;
 	}
+
 	.main__button {
 	  padding: 28px 25px;
 	  margin-left: 43%;    
 }
+
 	.menu__item {
 	  padding: 38px 24px;
 	  font-size: 30px;
 }
+
 	.menu__item_active::after {
 		display: none;
 }
+
 	.menu__item:hover:after, .menu__item_active:after {
     opacity: 0;
 }
+
 }
+
 @media(max-width: 601px) {
 	.main__button {
     padding: 18px 67px;
@@ -488,113 +609,151 @@ body {
     margin-left: 28%;
   }
 
+
   .main__title {
     font: bold 27px/35px pt_serifbold, arial, helvetica, sans-serif;
   }
+
   .main__subtitle {
     font: 400 16px/19px Roboto, arial, helvetica, sans-serif;
   }
+
   .main {
     background-size: 277px 221px;
   }
+
   .menu__item {
     font: 500 30px/35px Roboto, arial, helvetica, sans-serif;
   }
+
 }
+
 @media(max-width: 550px) {
 	.main__button {
 		font: 14px/5px Roboto, arial, helvetica, sans-serif;
 	}
+
 	.main__subtitle {
 		padding: 0 0 0 31px;
 	  margin: 0 0px 40px 74px;
 	  font: 400 18px/19px Roboto, arial, helvetica, sans-serif;
 	}
+
 }
+
 @media(max-width: 540px) {
 	.main__button {
 		margin-left: 28%;
 	}
+
 }
+
 @media(max-width: 525px) {
 	.main__title {
 		margin-left: -5px;
 	}
+
 }
+
 @media(max-width: 525px) {
 	.main__title {
 		margin-left: -15px;
 	}
+
 }
+
 @media(max-width: 510px) {
 	.main__button {
 		margin-left: 25%;
 	}
+
 }
+
 @media(max-width: 489px) {
 	.main__button {
 		margin-left: 29%;
 	  font: 14px/5px Roboto, arial, helvetica, sans-serif;
 	  padding: 18px 50px;
 	}
+
 }
+
 @media(max-width: 489px) {
 	.main__button {
 	  font: 12px/5px Roboto, arial, helvetica, sans-serif;
 	}
+
 }
+
 @media(max-width: 417px) {
 	.main__button {
 	  padding: 18px 45px;
 	}
+
 	.main__subtitle {
 		font: 400 16px/19px Roboto, arial, helvetica, sans-serif;
 	}
+
 	.main__title {
 		font: bold 29px/41px pt_serifbold, arial, helvetica, sans-serif;
 	}
+
 }
+
 @media(max-width: 410px) {
 	.main__title {
 	  padding: 300px 0 0 65px;
 	  font: bold 32px/41px pt_serifbold, arial, helvetica, sans-serif;
 }
+
 	.main__subtitle {
 		padding: 0;
 	}
+
 	.main__button {
 		padding: 18px 55px;
 		margin-left: 23%;
 	}
+
 }
+
 @media(max-width: 401px) {
 	.main__button {
 		padding: 18px 50px;
 	}
+
 }
+
 @media(max-width: 385px) {
 	.main__button {
 		padding: 18px 45px;
 	}
+
 }
+
 @media(max-width: 375px) {
 	.menu__btn {
 		width: 25px;
     height: 25px;
 	}
+
 	.logo {
 		top: 0;
 }
+
 	.logo__circle_color_blue {
     left: 33px;
 }
+
 	.logo__circle_color_dark-blue {
 		left: 24px;
 }
+
 	.main {
 	  padding: 0px 13% 0 0;
 	  background: center top -4px no-repeat url(img/mainimgmobile.svg);
 }
+
 
 	.main__title {
 	  padding: 256px 0 0 55px;
@@ -602,54 +761,69 @@ body {
 	  margin: 0px 0 36px 0;
 }
 
+
 	.main__subtitle {
 	  font: 400 16px/18px Roboto, arial, helvetica, sans-serif;
 	  padding: 0;
     margin: 0px 14px 27px 70px;
 }
+
 	.main__button {
 	  padding: 12px 25px 14px 18px;
     margin-left: 83px;
     font: 14px/16.41px Roboto, arial, helvetica, sans-serif;
 }
+
 	.menu {
 		padding: 174px 50px;
 	}
+
 	.menu__item {
 		padding: 22px 24px;
 		font: 500 30px/16px Roboto, arial, helvetica, sans-serif;
 	}
+
 	.menu__item:last-child {
 		padding: 21px 21px 0 0;
 	}
+
 	#menu__toggle:checked ~ .menu {
 	  left: -1px;
 }
+
 }
+
 @media(max-width: 345px) {
 	.main__subtitle {
 		font: 400 14px/18px Roboto, arial, helvetica, sans-serif;
 	}
+
 	.main__button {
 		margin-left: 24%;
 	}
+
 }
+
 @media(max-width: 341px) {
 	.main__button  {
 	  padding: 14px 21px;
 	  margin-left: 84px;
 	  font: 12px/16px Roboto, arial, helvetica, sans-serif;
 	}
+
 	.main__title {
 		font: bold 25px/32.75px pt_serifbold, arial, helvetica, sans-serif;
 	}
+
 	.main__subtitle {
 		font: 400 14px/18px Roboto, arial, helvetica, sans-serif;
 	}
+
 }
 
 @media(max-width: 313px) {
 	.main__button {
 		margin-left: 24%;
 	}
+
 }
