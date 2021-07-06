@@ -218,7 +218,7 @@ body {
 
 @media(max-width: 1558px) {
 	.main__title {
-		font: bold 55px/78px pt_serifbold,arial,helvetica, sans-serif;
+		font: bold 55px/78px pt_serifbold, arial, helvetica, sans-serif;
 	}
 
 }
